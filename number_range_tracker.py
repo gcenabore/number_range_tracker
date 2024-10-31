@@ -14,4 +14,12 @@ def main():
     while true:
         number_input = input("enter a number between 1-50 (or a number outside this range to stop): ")
 
-        
+        if number_input.isdigit():
+            num = int(number_input)
+            if 1 <= num <= 50:
+                counts[(num - 1) // 10] += 1
+            else:
+                break
+            
+        else:
+            print("error: Invalid number. Try again.")
