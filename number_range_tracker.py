@@ -8,3 +8,10 @@
 #print error if the number input is invalid
 #print the results
 
+def main():
+    counts = [0] * 5
+
+    while true:
+        number_input = input("enter a number between 1-50 (or a number outside this range to stop): ")
+
+        
